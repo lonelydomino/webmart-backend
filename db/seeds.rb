@@ -20,10 +20,18 @@ appliances = Category.create(name: "appliances")
 videogames = Category.create(name: "video games")
 beautycare = Category.create(name: "beauty care")
 
-tools.items << Item.create(name:"Chain saw").image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
-tools.items << Item.create(name:"Wrench").image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/wrench.jpeg'), filename: 'wrench.jpeg')
+chainsaw = Item.new(name:"Chain saw")
+tools.items << chainsaw
+chainsaw.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
+wrench = Item.new(name:"Wrench")
+tools.items << wrench
+wrench.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/wrench.jpeg'), filename: 'wrench.jpeg')
+
+drill = Item.new(name: "Drill")
+tools.items << drill
+drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
+
 tools.items << Item.create(name:"Screwdriver")
-tools.items << Item.create(name:"Drill").image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
 furniture.items << Item.create(name: "Chair")
 furniture.items << Item.create(name: "Table")
 furniture.items << Item.create(name: "Couch")
