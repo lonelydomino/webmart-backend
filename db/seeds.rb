@@ -390,3 +390,56 @@ pins.image.attach(io: File.open("#{path}pins.jpg"), filename: 'pins.jpg')
 sheep = Item.new(name: "Sheep Plushie", price: 13.99)
 toys.items << sheep
 sheep.image.attach(io: File.open("#{path}sheep.jpg"), filename: 'sheep.jpg')
+
+#Books
+
+isaiah = Item.new(name: "Isaiah", price: 12.99)
+books.items << isaiah
+isaiah.image.attach(io: File.open("#{path}isaiah.jpg"), filename: 'isaiah.jpg')
+
+memories = Item.new(name: "Making Memories", price: 14.99)
+books.items << memories
+memories.image.attach(io: File.open("#{path}memories.jpg"), filename: 'memories.jpg')
+
+wabisabi = Item.new(name: "Wabi Sabi", price: 15.99)
+books.items << wabisabi
+wabisabi.image.attach(io: File.open("#{path}wabisabi.jpg"), filename: 'wabisabi.jpg')
+
+typography = Item.new(name: "Typography", price: 11.99)
+books.items << typography
+typography.image.attach(io: File.open("#{path}typography.jpg"), filename: 'typography.jpg')
+
+ontour = Item.new(name: "Lissabon on Tour", price: 14.99)
+books.items << ontour
+ontour.image.attach(io: File.open("#{path}ontour.jpg"), filename: 'ontour.jpg')
+
+endurance = Item.new(name: "Endurance", price: 16.99)
+books.items << endurance
+endurance.image.attach(io: File.open("#{path}endurance.jpg"), filename: 'endurance.jpg')
+
+beautiful = Item.new(name: "Beautiful Resistance", price: 10.99)
+books.items << beautiful
+beautiful.image.attach(io: File.open("#{path}beautiful.jpg"), filename: 'beautiful.jpg')
+
+innovation = Item.new(name: "How Innovation Works", price: 15.99)
+books.items << innovation
+innovation.image.attach(io: File.open("#{path}innovation.jpg"), filename: 'innovation.jpg')
+
+storytelling = Item.new(name: "Storytelling Workbook", price: 12.99)
+books.items << storytelling
+storytelling.image.attach(io: File.open("#{path}storytelling.jpg"), filename: 'storytelling.jpg')
+
+limit = Item.new(name: "Limit Notebook", price: 9.99)
+books.items << limit
+limit.image.attach(io: File.open("#{path}limit.jpg"), filename: 'limit.jpg')
+
+milk = Item.new(name: "Milk and Honey", price: 10.99)
+books.items << milk
+milk.image.attach(io: File.open("#{path}milk.jpg"), filename: 'milk.jpg')
+
+theft = Item.new(name: "Identity Theft", price: 14.99)
+books.items << theft
+theft.image.attach(io: File.open("#{path}theft.jpg"), filename: 'theft.jpg')
+
+#Beauty Care
+
