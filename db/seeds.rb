@@ -10,7 +10,7 @@
 tools = Category.create(name: "tools", tag_line: "Add to your tool belt")
 pets = Category.create(name: "pets", tag_line: "For your furry friends")
 furniture = Category.create(name: "furniture", tag_line: "Spruce up your home")
-games = Category.create(name: "games", tag_line: "For your entertainment")
+videogames = Category.create(name: "games", tag_line: "For your entertainment")
 electronics = Category.create(name: "electronics", tag_line: "For students")
 books = Category.create(name: "books")
 clothing = Category.create(name: "clothing")
@@ -19,7 +19,7 @@ fitness = Category.create(name: "fitness")
 toys = Category.create(name: "toys")
 jewelry = Category.create(name: "Jewelry")
 appliances = Category.create(name: "appliances")
-videogames = Category.create(name: "video games")
+# videogames = Category.create(name: "video games")
 beautycare = Category.create(name: "beauty care")
 
 # Attach Pictures to Categories
@@ -343,3 +343,50 @@ fan.image.attach(io: File.open("#{path}fan.jpeg"), filename: 'fan.jpeg')
 
 #Toys
 
+america = Item.new(name: "Captain America", price: 21.99)
+toys.items << america
+america.image.attach(io: File.open("#{path}america.jpg"), filename: 'america.jpg')
+
+avocado = Item.new(name: "Avocado Plushie", price: 12.99)
+toys.items << avocado
+avocado.image.attach(io: File.open("#{path}avocado.jpg"), filename: 'avocado.jpg')
+
+bear = Item.new(name: "Bear Plushie", price: 10.99)
+toys.items << bear
+bear.image.attach(io: File.open("#{path}bear.jpg"), filename: 'bear.jpg')
+
+cat = Item.new(name: "Cat Plushie", price: 10.99)
+toys.items << cat
+cat.image.attach(io: File.open("#{path}cat.jpg"), filename: 'cat.jpg')
+
+cube = Item.new(name: "Rubiks Cube", price: 6.99)
+toys.items << cube
+cube.image.attach(io: File.open("#{path}cube.jpg"), filename: 'cube.jpg')
+
+goku = Item.new(name: "SS2 Goku Figure", price: 25.99)
+toys.items << goku
+goku.image.attach(io: File.open("#{path}goku.jpg"), filename: 'goku.jpg')
+
+groot = Item.new(name: "Baby Groot", price: 14.99)
+toys.items << groot
+groot.image.attach(io: File.open("#{path}groot.jpg"), filename: 'groot.jpg')
+
+marbles = Item.new(name: "Marbles Set", price: 4.99)
+toys.items << marbles
+marbles.image.attach(io: File.open("#{path}marbles.jpg"), filename: 'marbles.jpg')
+
+mario = Item.new(name: "Mario and Friends Figures", price: 35.99)
+toys.items << mario
+mario.image.attach(io: File.open("#{path}mario.jpg"), filename: 'mario.jpg')
+
+minion = Item.new(name: "Minion Toy", price: 7.99)
+toys.items << minion
+minion.image.attach(io: File.open("#{path}minion.jpg"), filename: 'minion.jpg')
+
+pins = Item.new(name: "Animal Bowling Pins", price: 9.99)
+toys.items << pins
+pins.image.attach(io: File.open("#{path}pins.jpg"), filename: 'pins.jpg')
+
+sheep = Item.new(name: "Sheep Plushie", price: 13.99)
+toys.items << sheep
+sheep.image.attach(io: File.open("#{path}sheep.jpg"), filename: 'sheep.jpg')
