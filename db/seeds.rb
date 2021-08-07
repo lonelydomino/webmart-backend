@@ -48,51 +48,51 @@ drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_b
 
 armytool = Item.new(name: "armytool", price: 1.99)
 tools.items << armytool
-armytool.image.attach(io: File.open("#{path}armytool.jpeg"), filename: 'armytool.jpeg')
+armytool.image.attach(io: File.open("#{path}armytool.jpg"), filename: 'armytool.jpg')
 
 bbqtools = Item.new(name: "bbqtools", price: 66.99)
 tools.items << bbqtools
-bbqtools.image.attach(io: File.open("#{path}bbqtools.jpeg"), filename: 'bbqtools.jpeg')
+bbqtools.image.attach(io: File.open("#{path}bbqtools.jpg"), filename: 'bbqtools.jpg')
 
 chisel = Item.new(name: "chisel", price: 5.99)
 tools.items << chisel
-chisel.image.attach(io: File.open("#{path}chisel.jpeg"), filename: 'chisel.jpeg')
+chisel.image.attach(io: File.open("#{path}chisel.jpg"), filename: 'chisel.jpeg')
 
 hammer = Item.new(name: "hammer", price: 4.99)
 tools.items << hammer
-hammer.image.attach(io: File.open("#{path}hammer.jpeg"), filename: 'hammer.jpeg')
+hammer.image.attach(io: File.open("#{path}hammer.jpg"), filename: 'hammer.jpg')
 
 pliers = Item.new(name: "pliers", price: 2.99)
 tools.items << pliers
-pliers.image.attach(io: File.open("#{path}pliers.jpeg"), filename: 'pliers.jpeg')
+pliers.image.attach(io: File.open("#{path}pliers.jpg"), filename: 'pliers.jpg')
 
 saw = Item.new(name: "saw", price: 45.99)
 tools.items << saw
-saw.image.attach(io: File.open("#{path}saw.jpeg"), filename: 'saw.jpeg')
+saw.image.attach(io: File.open("#{path}saw.jpg"), filename: 'saw.jpg')
 
 screwdriver = Item.new(name: "screwdriver", price: 3.99)
 tools.items << screwdriver
-screwdriver.image.attach(io: File.open("#{path}screwdriver.jpeg"), filename: 'screwdriver.jpeg')
+screwdriver.image.attach(io: File.open("#{path}screwdriver.jpg"), filename: 'screwdriver.jpg')
 
 sockets = Item.new(name: "sockets", price: 12.99)
 tools.items << sockets
-sockets.image.attach(io: File.open("#{path}sockets.jpeg"), filename: 'sockets.jpeg')
+sockets.image.attach(io: File.open("#{path}sockets.jpg"), filename: 'sockets.jpg')
 
 stapler = Item.new(name: "stapler", price: 22.99)
 tools.items << stapler
-stapler.image.attach(io: File.open("#{path}stapler.jpeg"), filename: 'stapler.jpeg')
+stapler.image.attach(io: File.open("#{path}stapler.jpg"), filename: 'stapler.jpg')
 
 tapemeasure = Item.new(name: "Tape Measure", price: 43.99)
 tools.items << tapemeasure
-tapemeasure.image.attach(io: File.open("#{path}tapemeasure.jpeg"), filename: 'tapemeasure.jpeg')
+tapemeasure.image.attach(io: File.open("#{path}tapemeasure.jpg"), filename: 'tapemeasure.jpg')
 
 wrenches = Item.new(name: "Wrenches", price: 23.99)
 tools.items << wrenches
-wrenches.image.attach(io: File.open("#{path}wrenches.jpeg"), filename: 'wrenches.jpeg')
+wrenches.image.attach(io: File.open("#{path}wrenches.jpg"), filename: 'wrenches.jpg')
 
 nutdriver = Item.new(name: "Nut Driver", price: 55.99)
 tools.items << nutdriver
-nutdriver.image.attach(io: File.open("#{path}nutdriver.jpeg"), filename: 'nutdriver.jpeg')
+nutdriver.image.attach(io: File.open("#{path}nutdriver.jpg"), filename: 'nutdriver.jpg')
 
 #Furniture
 antiquetable = Item.new(name: "Antique Table", price: 234.43)
@@ -588,3 +588,53 @@ hide.image.attach(io: File.open("#{path}hide.jpg"), filename: 'hide.jpg')
 spike = Item.new(name: "Spiked Chew Toy", price: 8.49)
 pets.items << spike
 spike.image.attach(io: File.open("#{path}spike.jpg"), filename: 'spike.jpg')
+
+#Fitness
+
+abdominal = Item.new(name: "Abdominal Assistant", price: 46.99)
+fitness.items << abdominal
+abdominal.image.attach(io: File.open("#{path}abdominal.jpg"), filename: 'abdominal.jpg')
+
+barbell = Item.new(name: "Barbell", price: 39.99)
+fitness.items << barbell
+barbell.image.attach(io: File.open("#{path}barbell.jpg"), filename: 'barbell.jpg')
+
+bottle = Item.new(name: "Workout Bottle", price: 16.99)
+fitness.items << bottle
+bottle.image.attach(io: File.open("#{path}bottle.jpg"), filename: 'bottle.jpg')
+
+dumbell = Item.new(name: "Dumbell Set", price: 29.99)
+fitness.items << dumbell
+dumbell.image.attach(io: File.open("#{path}dumbell.jpg"), filename: 'dumbell.jpg')
+
+kettlebell = Item.new(name: "Kettlebell", price: 32.99)
+fitness.items << kettlebell
+kettlebell.image.attach(io: File.open("#{path}kettlebell.jpg"), filename: 'kettlebell.jpg')
+
+plates = Item.new(name: "Barbell Plates", price: 25.99)
+fitness.items << plates
+plates.image.attach(io: File.open("#{path}plates.jpg"), filename: 'plates.jpg')
+
+resistance = Item.new(name: "Hand Resistance", price: 16.99)
+fitness.items << resistance
+resistance.image.attach(io: File.open("#{path}resistance.jpg"), filename: 'resistance.jpg')
+
+resistanceband = Item.new(name: "Resistance Band", price: 12.49)
+fitness.items << resistanceband
+resistanceband.image.attach(io: File.open("#{path}resistanceband.jpg"), filename: 'resistanceband.jpg')
+
+rope = Item.new(name: "Jump Rope", price: 12.99)
+fitness.items << rope
+rope.image.attach(io: File.open("#{path}jumprope.jpg"), filename: 'jumprope.jpg')
+
+scale = Item.new(name: "Weight Scale", price: 22.46)
+fitness.items << scale
+scale.image.attach(io: File.open("#{path}scale.jpg"), filename: 'scale.jpg')
+
+stability = Item.new(name: "Stability Ball", price: 25.49)
+fitness.items << stability
+stability.image.attach(io: File.open("#{path}stability.jpg"), filename: 'stability.jpg')
+
+wheel = Item.new(name: "Abdominal Wheel", price: 17.99)
+fitness.items << wheel
+wheel.image.attach(io: File.open("#{path}wheel.jpg"), filename: 'wheel.jpg')
