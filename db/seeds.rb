@@ -443,3 +443,50 @@ theft.image.attach(io: File.open("#{path}theft.jpg"), filename: 'theft.jpg')
 
 #Beauty Care
 
+balm = Item.new(name: "Lip Balm", price: 7.46)
+beautycare.items << balm
+balm.image.attach(io: File.open("#{path}balm.jpg"), filename: 'balm.jpg')
+
+bronzer = Item.new(name: "Brown Bronzer", price: 8.99)
+beautycare.items << bronzer
+bronzer.image.attach(io: File.open("#{path}bronzer.jpg"), filename: 'bronzer.jpg')
+
+concealer = Item.new(name: "Concealer", price: 9.46)
+beautycare.items << concealer
+concealer.image.attach(io: File.open("#{path}concealer.jpg"), filename: 'concealer.jpg')
+
+dryer = Item.new(name: "Hair Dryer", price: 25.99)
+beautycare.items << dryer
+dryer.image.attach(io: File.open("#{path}dryer.jpg"), filename: 'dryer.jpg')
+
+eyeliner = Item.new(name: "Eyeliner", price: 3.99)
+beautycare.items << eyeliner
+eyeliner.image.attach(io: File.open("#{path}eyeliner.jpg"), filename: 'eyeliner.jpg')
+
+eyeshadow = Item.new(name: "Eyeshadow", price: 13.99)
+beautycare.items << eyeshadow
+eyeshadow.image.attach(io: File.open("#{path}eyeshadow.jpg"), filename: 'eyeshadow.jpg')
+
+lipgloss = Item.new(name: "Lipgloss", price: 5.46)
+beautycare.items << lipgloss
+lipgloss.image.attach(io: File.open("#{path}lipgloss.jpg"), filename: 'lipgloss.jpg')
+
+lipstick = Item.new(name: "Lipstick", price: 6.99)
+beautycare.items << lipstick
+lipstick.image.attach(io: File.open("#{path}lipstick.jpg"), filename: 'lipstick.jpg')
+
+pallete = Item.new(name: "Pallete", price: 12.99)
+beautycare.items << pallete
+pallete.image.attach(io: File.open("#{path}pallete.jpg"), filename: 'pallete.jpg')
+
+mascara = Item.new(name: "Mascara", price: 8.99)
+beautycare.items << mascara
+mascara.image.attach(io: File.open("#{path}mascara.jpg"), filename: 'mascara.jpg')
+
+perfume = Item.new(name: "Perfume", price: 45.99)
+beautycare.items << perfume
+perfume.image.attach(io: File.open("#{path}perfume.jpg"), filename: 'perfume.jpg')
+
+settingpowder = Item.new(name: "Setting Powder", price: 11.99)
+beautycare.items << settingpowder
+settingpowder.image.attach(io: File.open("#{path}settingpowder.jpg"), filename: 'settingpowder.jpg')
