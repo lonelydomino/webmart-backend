@@ -93,3 +93,49 @@ mattress.image.attach(io: File.open("#{path}mattress.jpeg"), filename: 'mattress
 pillows = Item.new(name: "Pillows", price: 34.04)
 furniture.items << pillows
 pillows.image.attach(io: File.open("#{path}pillows.jpeg"), filename: 'pillows.jpeg')
+
+#electronics
+
+airpods = Item.new(name: "Airpods", price: 234.98)
+electronics.items << airpods
+airpods.image.attach(io: File.open("#{path}airpods.jpeg"), filename: 'airpods.jpeg')
+
+camera = Item.new(name: "Camera", price: 347.99)
+electronics.items << camera
+camera.image.attach(io: File.open("#{path}camera.jpeg"), filename: 'camera.jpeg')
+
+controller = Item.new(name: "Controller", price: 56.99)
+electronics.items << controller
+controller.image.attach(io: File.open("#{path}controller.jpeg"), filename: 'controller.jpeg')
+
+headphones = Item.new(name: "Headphones", price: 344.99)
+electronics.items << headphones
+headphones.image.attach(io: File.open("#{path}headphones.jpeg"), filename: 'headphones.jpeg')
+
+ipad = Item.new(name: "iPad", price: 998.99)
+electronics.items << ipad
+ipad.image.attach(io: File.open("#{path}ipad.jpeg"), filename: 'ipad.jpeg')
+
+iphone = Item.new(name: "iPhone", price: 677.99)
+electronics.items << iphone
+iphone.image.attach(io: File.open("#{path}iphone.jpeg"), filename: 'iphone.jpeg')
+
+keyboard = Item.new(name: "Keyboard", price: 34.99)
+electronics.items << keyboard
+keyboard.image.attach(io: File.open("#{path}keyboard.jpeg"), filename: 'keyboard.jpeg')
+
+monitor = Item.new(name: "Monitor", price: 443.99)
+electronics.items << monitor
+monitor.image.attach(io: File.open("#{path}monitor.jpeg"), filename: 'monitor.jpeg')
+
+mouse = Item.new(name: "Mouse", price: 23.99)
+electronics.items << mouse
+mouse.image.attach(io: File.open("#{path}mouse.jpeg"), filename: 'mouse.jpeg')
+
+router = Item.new(name: "Router", price: 231.99)
+electronics.items << router
+router.image.attach(io: File.open("#{path}router.jpeg"), filename: 'router.jpeg')
+
+tv = Item.new(name: "TV", price: 586.99)
+electronics.items << tv
+tv.image.attach(io: File.open("#{path}tv.jpeg"), filename: 'tv.jpeg')
