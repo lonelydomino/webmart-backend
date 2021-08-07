@@ -490,3 +490,53 @@ perfume.image.attach(io: File.open("#{path}perfume.jpg"), filename: 'perfume.jpg
 settingpowder = Item.new(name: "Setting Powder", price: 11.99)
 beautycare.items << settingpowder
 settingpowder.image.attach(io: File.open("#{path}settingpowder.jpg"), filename: 'settingpowder.jpg')
+
+#Pets
+
+catbowl = Item.new(name: "Orange Cat Bowl", price: 6.99)
+pets.items << catbowl
+catbowl.image.attach(io: File.open("#{path}catbowl.jpg"), filename: 'catbowl.jpg')
+
+catbowl2 = Item.new(name: "White Cat Bowl", price: 7.99)
+pets.items << catbowl2
+catbowl2.image.attach(io: File.open("#{path}catbowl2.jpg"), filename: 'catbowl2.jpg')
+
+rope = Item.new(name: "Rope Toy", price: 7.99)
+pets.items << rope
+rope.image.attach(io: File.open("#{path}rope.jpg"), filename: 'rope.jpg')
+
+chew = Item.new(name: "Blue Chew Toy", price: 5.99)
+pets.items << chew
+chew.image.attach(io: File.open("#{path}chew.jpg"), filename: 'chew.jpg')
+
+ballchew = Item.new(name: "Ball Chew Toy", price: 3.99)
+pets.items << ballchew
+ballchew.image.attach(io: File.open("#{path}ballchew.jpg"), filename: 'ballchew.jpg')
+
+toy = Item.new(name: "Toy Plushie", price: 6.99)
+pets.items << toy
+toy.image.attach(io: File.open("#{path}toy.jpg"), filename: 'toy.jpg')
+
+ring = Item.new(name: "Ring Toy", price: 10.99)
+pets.items << ring
+ring.image.attach(io: File.open("#{path}ring.jpg"), filename: 'ring.jpg')
+
+treat = Item.new(name: "Dental Treat", price: 7.46)
+pets.items << treat
+treat.image.attach(io: File.open("#{path}treat.jpg"), filename: 'treat.jpg')
+
+dogbowl = Item.new(name: "Square Dog Bowl", price: 16.54)
+pets.items << dogbowl
+dogbowl.image.attach(io: File.open("#{path}dogbowl.jpg"), filename: 'dogbowl.jpg')
+
+post = Item.new(name: "Scratching Post", price: 35.99)
+pets.items << post
+post.image.attach(io: File.open("#{path}post.jpg"), filename: 'post.jpg')
+
+hide = Item.new(name: "Cat Hide", price: 20.99)
+pets.items << hide
+hide.image.attach(io: File.open("#{path}hide.jpg"), filename: 'hide.jpg')
+
+spike = Item.new(name: "Spiked Chew Toy", price: 8.49)
+pets.items << spike
+spike.image.attach(io: File.open("#{path}spike.jpg"), filename: 'spike.jpg')
