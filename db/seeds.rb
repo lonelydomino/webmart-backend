@@ -26,7 +26,7 @@ beautycare = Category.create(name: "beauty care")
 furniture.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
 tools.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/tools.webp'), filename: 'tools.webp')
 pets.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/pets.webp'), filename: 'pets.webp')
-games.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
+videogames.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
 
 
 path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/"
@@ -118,7 +118,7 @@ electronics.items << ipad
 ipad.image.attach(io: File.open("#{path}ipad.jpeg"), filename: 'ipad.jpeg')
 
 iphone = Item.new(name: "iPhone", price: 677.99)
-videogames.items << iphone
+electronics.items << iphone
 iphone.image.attach(io: File.open("#{path}iphone.jpeg"), filename: 'iphone.jpeg')
 
 keyboard = Item.new(name: "Keyboard", price: 34.99)
