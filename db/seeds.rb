@@ -48,48 +48,48 @@ drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_b
 #Furniture
 antiquetable = Item.new(name: "Antique Table")
 furniture.items << antiquetable
-antiquetable.image.attach(io: File.open(`#{path}antiquetable.jpeg`), filename: 'antiquetable.jpeg')
+antiquetable.image.attach(io: File.open("#{path}antiquetable.jpeg"), filename: 'antiquetable.jpeg', price: 234.43)
 
 armchair = Item.new(name: "Armchair")
 furniture.items << armchair
-armchair.image.attach(io: File.open(`#{path}armchair.jpeg`), filename: 'armchair.jpeg')
+armchair.image.attach(io: File.open("#{path}armchair.jpeg"), filename: 'armchair.jpeg', price: 543.00)
 
 bookcase = Item.new(name: "Bookcase")
 furniture.items << bookcase
-bookcase.image.attach(io: File.open(`#{path}bookcase.jpeg`), filename: 'bookcase.jpeg')
+bookcase.image.attach(io: File.open("#{path}bookcase.jpeg"), filename: 'bookcase.jpeg', price: 345.00)
 
 couch = Item.new(name: "Couch")
 furniture.items << couch
-couch.image.attach(io: File.open(`#{path}couch.jpeg`), filename: 'couch.jpeg')
+couch.image.attach(io: File.open("#{path}couch.jpeg"), filename: 'couch.jpeg', price: 345.34)
 
 desk = Item.new(name: "Desk")
 furniture.items << desk
-desk.image.attach(io: File.open(`#{path}desk.jpeg`), filename: 'desk.jpeg')
+desk.image.attach(io: File.open("#{path}desk.jpeg"), filename: 'desk.jpeg', price: 543.00)
 
 drawer = Item.new(name: "Drawer")
 furniture.items << drawer
-drawer.image.attach(io: File.open(`#{path}drawer.jpeg`), filename: 'drawer.jpeg')
+drawer.image.attach(io: File.open("#{path}drawer.jpeg"), filename: 'drawer.jpeg', price: 435.00)
 
-dresser = Item.new(name: "Dresser")
+dresser = Item.new(name: "Dresser", price: )
 furniture.items << dresser
-dresser.image.attach(io: File.open(`#{path}dresser.jpeg`), filename: 'dresser.jpeg')
+dresser.image.attach(io: File.open("#{path}dresser.jpeg"), filename: 'dresser.jpeg', price: 589.54)
 
-homeoffice = Item.new(name: "Home Office")
+homeoffice = Item.new(name: "Home Office", price: 2000.45)
 furniture.items << homeoffice
-homeoffice.image.attach(io: File.open(`#{path}homeoffice.jpeg`), filename: 'homeoffice.jpeg')
+homeoffice.image.attach(io: File.open("#{path}homeoffice.jpeg"), filename: 'homeoffice.jpeg')
 
-leathersofa = Item.new(name: "Leather Sofa")
+leathersofa = Item.new(name: "Leather Sofa", price: 800.99)
 furniture.items << leathersofa
-leathersofa.image.attach(io: File.open(`#{path}leathersofa.jpeg`), filename: 'leathersofa.jpeg')
+leathersofa.image.attach(io: File.open("#{path}leathersofa.jpeg"), filename: 'leathersofa.jpeg')
 
-luxurysofa = Item.new(name: "Luxury Sofa")
+luxurysofa = Item.new(name: "Luxury Sofa", price: 4543.43)
 furniture.items << luxurysofa
-luxurysofa.image.attach(io: File.open(`#{path}luxurysofa.jpeg`), filename: 'luxurysofa.jpeg')
+luxurysofa.image.attach(io: File.open("#{path}luxurysofa.jpeg"), filename: 'luxurysofa.jpeg')
 
-mattress = Item.new(name: "Mattress")
+mattress = Item.new(name: "Mattress", price: 234.23)
 furniture.items << mattress
-mattress.image.attach(io: File.open(`#{path}mattress.jpeg`), filename: 'mattress.jpeg')
+mattress.image.attach(io: File.open("#{path}mattress.jpeg"), filename: 'mattress.jpeg')
 
-pillows = Item.new(name: "Pillows")
+pillows = Item.new(name: "Pillows", price: 34.04)
 furniture.items << pillows
-pillows.image.attach(io: File.open(`#{path}pillows.jpeg`), filename: 'pillows.jpeg')
+pillows.image.attach(io: File.open("#{path}pillows.jpeg"), filename: 'pillows.jpeg')
