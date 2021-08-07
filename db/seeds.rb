@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Categories
 tools = Category.create(name: "tools", tag_line: "Add to your tool belt")
 pets = Category.create(name: "pets", tag_line: "For your furry friends")
 furniture = Category.create(name: "furniture", tag_line: "Spruce up your home")
@@ -20,9 +21,22 @@ appliances = Category.create(name: "appliances")
 videogames = Category.create(name: "video games")
 beautycare = Category.create(name: "beauty care")
 
+# Attach Pictures to Categories
+furniture.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
+tools.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/tools.webp'), filename: 'tools.webp')
+pets.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/pets.webp'), filename: 'pets.webp')
+games.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
+
+
+path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/"
+
+
+
+#Tools
 chainsaw = Item.new(name:"Chain saw")
 tools.items << chainsaw
 chainsaw.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
+
 wrench = Item.new(name:"Wrench")
 tools.items << wrench
 wrench.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/wrench.jpeg'), filename: 'wrench.jpeg')
@@ -31,12 +45,51 @@ drill = Item.new(name: "Drill")
 tools.items << drill
 drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
 
-tools.items << Item.create(name:"Screwdriver")
-furniture.items << Item.create(name: "Chair")
-furniture.items << Item.create(name: "Table")
-furniture.items << Item.create(name: "Couch")
+#Furniture
+antiquetable = Item.new(name: "Antique Table")
+furniture.items << antiquetable
+antiquetable.image.attach(io: File.open(`#{path}antiquetable.jpeg`), filename: 'antiquetable.jpeg')
 
-furniture.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
-tools.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/tools.webp'), filename: 'tools.webp')
-pets.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/pets.webp'), filename: 'pets.webp')
-games.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
+armchair = Item.new(name: "Armchair")
+furniture.items << armchair
+armchair.image.attach(io: File.open(`#{path}armchair.jpeg`), filename: 'armchair.jpeg')
+
+bookcase = Item.new(name: "Bookcase")
+furniture.items << bookcase
+bookcase.image.attach(io: File.open(`#{path}bookcase.jpeg`), filename: 'bookcase.jpeg')
+
+couch = Item.new(name: "Couch")
+furniture.items << couch
+couch.image.attach(io: File.open(`#{path}couch.jpeg`), filename: 'couch.jpeg')
+
+desk = Item.new(name: "Desk")
+furniture.items << desk
+desk.image.attach(io: File.open(`#{path}desk.jpeg`), filename: 'desk.jpeg')
+
+drawer = Item.new(name: "Drawer")
+furniture.items << drawer
+drawer.image.attach(io: File.open(`#{path}drawer.jpeg`), filename: 'drawer.jpeg')
+
+dresser = Item.new(name: "Dresser")
+furniture.items << dresser
+dresser.image.attach(io: File.open(`#{path}dresser.jpeg`), filename: 'dresser.jpeg')
+
+homeoffice = Item.new(name: "Home Office")
+furniture.items << homeoffice
+homeoffice.image.attach(io: File.open(`#{path}homeoffice.jpeg`), filename: 'homeoffice.jpeg')
+
+leathersofa = Item.new(name: "Leather Sofa")
+furniture.items << leathersofa
+leathersofa.image.attach(io: File.open(`#{path}leathersofa.jpeg`), filename: 'leathersofa.jpeg')
+
+luxurysofa = Item.new(name: "Luxury Sofa")
+furniture.items << luxurysofa
+luxurysofa.image.attach(io: File.open(`#{path}luxurysofa.jpeg`), filename: 'luxurysofa.jpeg')
+
+mattress = Item.new(name: "Mattress")
+furniture.items << mattress
+mattress.image.attach(io: File.open(`#{path}mattress.jpeg`), filename: 'mattress.jpeg')
+
+pillows = Item.new(name: "Pillows")
+furniture.items << pillows
+pillows.image.attach(io: File.open(`#{path}pillows.jpeg`), filename: 'pillows.jpeg')
