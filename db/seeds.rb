@@ -34,17 +34,65 @@ path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/i
 
 
 #Tools
-chainsaw = Item.new(name:"Chain saw")
+chainsaw = Item.new(name:"Chain saw", price: 22.99)
 tools.items << chainsaw
 chainsaw.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
 
-wrench = Item.new(name:"Wrench")
+wrench = Item.new(name:"Wrench", price: 33.99)
 tools.items << wrench
 wrench.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/wrench.jpeg'), filename: 'wrench.jpeg')
 
-drill = Item.new(name: "Drill")
+drill = Item.new(name: "Drill", price: 43.99)
 tools.items << drill
 drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
+
+armytool = Item.new(name: "armytool", price: 1.99)
+tools.items << armytool
+armytool.image.attach(io: File.open("#{path}armytool.jpeg"), filename: 'armytool.jpeg')
+
+bbqtools = Item.new(name: "bbqtools", price: 66.99)
+tools.items << bbqtools
+bbqtools.image.attach(io: File.open("#{path}bbqtools.jpeg"), filename: 'bbqtools.jpeg')
+
+chisel = Item.new(name: "chisel", price: 5.99)
+tools.items << chisel
+chisel.image.attach(io: File.open("#{path}chisel.jpeg"), filename: 'chisel.jpeg')
+
+hammer = Item.new(name: "hammer", price: 4.99)
+tools.items << hammer
+hammer.image.attach(io: File.open("#{path}hammer.jpeg"), filename: 'hammer.jpeg')
+
+pliers = Item.new(name: "pliers", price: 2.99)
+tools.items << pliers
+pliers.image.attach(io: File.open("#{path}pliers.jpeg"), filename: 'pliers.jpeg')
+
+saw = Item.new(name: "saw", price: 45.99)
+tools.items << saw
+saw.image.attach(io: File.open("#{path}saw.jpeg"), filename: 'saw.jpeg')
+
+screwdriver = Item.new(name: "screwdriver", price: 3.99)
+tools.items << screwdriver
+screwdriver.image.attach(io: File.open("#{path}screwdriver.jpeg"), filename: 'screwdriver.jpeg')
+
+sockets = Item.new(name: "sockets", price: 12.99)
+tools.items << sockets
+sockets.image.attach(io: File.open("#{path}sockets.jpeg"), filename: 'sockets.jpeg')
+
+stapler = Item.new(name: "stapler", price: 22.99)
+tools.items << stapler
+stapler.image.attach(io: File.open("#{path}stapler.jpeg"), filename: 'stapler.jpeg')
+
+tapemeasure = Item.new(name: "Tape Measure", price: 43.99)
+tools.items << tapemeasure
+tapemeasure.image.attach(io: File.open("#{path}tapemeasure.jpeg"), filename: 'tapemeasure.jpeg')
+
+wrenches = Item.new(name: "Wrenches", price: 23.99)
+tools.items << wrenches
+wrenches.image.attach(io: File.open("#{path}wrenches.jpeg"), filename: 'wrenches.jpeg')
+
+nutdriver = Item.new(name: "Nut Driver", price: 55.99)
+tools.items << nutdriver
+nutdriver.image.attach(io: File.open("#{path}nutdriver.jpeg"), filename: 'nutdriver.jpeg')
 
 #Furniture
 antiquetable = Item.new(name: "Antique Table", price: 234.43)
