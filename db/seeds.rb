@@ -17,6 +17,7 @@ clothing = Category.create(name: "clothing")
 groceries = Category.create(name: "groceries")
 fitness = Category.create(name: "fitness")
 toys = Category.create(name: "toys")
+jewelry = Category.create(name: "Jewelry")
 appliances = Category.create(name: "appliances")
 videogames = Category.create(name: "video games")
 beautycare = Category.create(name: "beauty care")
@@ -117,7 +118,7 @@ electronics.items << ipad
 ipad.image.attach(io: File.open("#{path}ipad.jpeg"), filename: 'ipad.jpeg')
 
 iphone = Item.new(name: "iPhone", price: 677.99)
-electronics.items << iphone
+videogames.items << iphone
 iphone.image.attach(io: File.open("#{path}iphone.jpeg"), filename: 'iphone.jpeg')
 
 keyboard = Item.new(name: "Keyboard", price: 34.99)
@@ -139,3 +140,206 @@ router.image.attach(io: File.open("#{path}router.jpeg"), filename: 'router.jpeg'
 tv = Item.new(name: "TV", price: 586.99)
 electronics.items << tv
 tv.image.attach(io: File.open("#{path}tv.jpeg"), filename: 'tv.jpeg')
+
+# videogames
+
+atari = Item.new(name: "Atari", price: 65.99)
+videogames.items << atari
+atari.image.attach(io: File.open("#{path}atari.jpeg"), filename: 'atari.jpeg')
+
+gameboy = Item.new(name: "Gameboy Advance", price: 45.99)
+videogames.items << gameboy
+gameboy.image.attach(io: File.open("#{path}gameboy.jpeg"), filename: 'gameboy.jpeg')
+
+gamecube = Item.new(name: "Gamecube", price: 123.99)
+videogames.items << gamecube
+gamecube.image.attach(io: File.open("#{path}gamecube.jpeg"), filename: 'gamecube.jpeg')
+
+n64 = Item.new(name: "Nintendo 64", price: 900.99)
+videogames.items << n64
+n64.image.attach(io: File.open("#{path}n64.jpeg"), filename: 'n64.jpeg')
+
+nintendo = Item.new(name: "Nintendo", price: 45.99)
+videogames.items << nintendo
+nintendo.image.attach(io: File.open("#{path}nintendo.jpeg"), filename: 'nintendo.jpeg')
+
+playstation = Item.new(name: "Playstation", price: 55.99)
+videogames.items << playstation
+playstation.image.attach(io: File.open("#{path}playstation.jpeg"), filename: 'playstation.jpeg')
+
+ps2 = Item.new(name: "Playstation 2", price: 99.99)
+videogames.items << ps2
+ps2.image.attach(io: File.open("#{path}ps2.jpeg"), filename: 'ps2.jpeg')
+
+ps4 = Item.new(name: "Playstation 4", price: 199.99)
+videogames.items << ps4
+ps4.image.attach(io: File.open("#{path}ps4.jpeg"), filename: 'ps4.jpeg')
+
+psp = Item.new(name: "Playstation Portable", price: 59.99)
+videogames.items << psp
+psp.image.attach(io: File.open("#{path}psp.jpeg"), filename: 'psp.jpeg')
+
+snintendo = Item.new(name: "Super Nintendo", price: 69.99)
+videogames.items << snintendo
+snintendo.image.attach(io: File.open("#{path}snintendo.jpeg"), filename: 'snintendo.jpeg')
+
+xbox = Item.new(name: "Xbox", price: 79.99)
+videogames.items << xbox
+xbox.image.attach(io: File.open("#{path}xbox.jpeg"), filename: 'xbox.jpeg')
+
+xboxone = Item.new(name: "Xbox One", price: 399.99)
+videogames.items << xboxone
+xboxone.image.attach(io: File.open("#{path}xboxone.jpeg"), filename: 'xboxone.jpeg')
+
+#Jewelry
+
+diamondring = Item.new(name: "Diamond Ring", price: 1490.99)
+jewelry.items << diamondring
+diamondring.image.attach(io: File.open("#{path}diamondring.png"), filename: 'diamondring.png')
+
+rosegold = Item.new(name: "Rose Gold Ring", price: 799.99)
+jewelry.items << rosegold
+rosegold.image.attach(io: File.open("#{path}rosegold.png"), filename: 'rosegold.png')
+
+engagement = Item.new(name: "Engagement Ring", price: 1699.99)
+jewelry.items << engagement
+engagement.image.attach(io: File.open("#{path}engagement.png"), filename: 'engagement.png')
+
+gemstone = Item.new(name: "Gemstone Necklace", price: 69.99)
+jewelry.items << gemstone
+gemstone.image.attach(io: File.open("#{path}gemstone.png"), filename: 'gemstone.png')
+
+pearl = Item.new(name: "Pearl Necklace", price: 309.99)
+jewelry.items << pearl
+pearl.image.attach(io: File.open("#{path}pearl.png"), filename: 'pearl.png')
+
+bracelet = Item.new(name: "Gold and Silver Bracelet", price: 719.99)
+jewelry.items << bracelet
+bracelet.image.attach(io: File.open("#{path}bracelet.png"), filename: 'bracelet.png')
+
+bluegemstone = Item.new(name: "White Silver and Blue Gemstone Earrings", price: 219.99)
+jewelry.items << bluegemstone
+bluegemstone.image.attach(io: File.open("#{path}bluegemstone.png"), filename: 'bluegemstone.png')
+
+watch = Item.new(name: "Gold and Silver Analog Watch", price: 325.99)
+jewelry.items << watch
+watch.image.attach(io: File.open("#{path}watch.png"), filename: 'watch.png')
+
+chronograph = Item.new(name: "Brown Leather Chronograph Watch", price: 656.35)
+jewelry.items << chronograph
+chronograph.image.attach(io: File.open("#{path}chronograph.png"), filename: 'chronograph.png')
+
+pendant = Item.new(name: "Gold Painted Pendant Necklace", price: 189.99)
+jewelry.items << pendant
+pendant.image.attach(io: File.open("#{path}pendant.png"), filename: 'pendant.png')
+
+goldengagement = Item.new(name: "Rose Gold Engagement Ring", price: 2199.99)
+jewelry.items << goldengagement
+goldengagement.image.attach(io: File.open("#{path}goldengagement.png"), filename: 'goldengagement.png')
+
+diamondengagement = Item.new(name: "Diamond Engagement Ring", price: 1699.99)
+jewelry.items << diamondengagement
+diamondengagement.image.attach(io: File.open("#{path}diamondengagement.png"), filename: 'diamondengagement.png')
+
+#Groceries
+
+bar = Item.new(name: "Honey Bar", price: 2.99)
+groceries.items << bar
+bar.image.attach(io: File.open("#{path}bar.jpeg"), filename: 'bar.jpeg')
+
+chocolate = Item.new(name: "Bensdorp's Chocolate Box", price: 18.99)
+groceries.items << chocolate
+chocolate.image.attach(io: File.open("#{path}chocolate.jpeg"), filename: 'chocolate.jpeg')
+
+cloves = Item.new(name: "Whole Cloves", price: 7.99)
+groceries.items << cloves
+cloves.image.attach(io: File.open("#{path}cloves.jpeg"), filename: 'cloves.jpeg')
+
+durian = Item.new(name: "Dried Durian", price: 8.99)
+groceries.items << durian
+durian.image.attach(io: File.open("#{path}durian.jpeg"), filename: 'durian.jpeg')
+
+candy = Item.new(name: "Chocolate Bar", price: 2.49)
+groceries.items << candy
+candy.image.attach(io: File.open("#{path}candy.jpeg"), filename: 'candy.jpeg')
+
+coffee = Item.new(name: "Pea Berry Coffee", price: 6.99)
+groceries.items << coffee
+coffee.image.attach(io: File.open("#{path}coffee.jpeg"), filename: 'coffee.jpeg')
+
+macaroons = Item.new(name: "Assorted Macaroons", price: 8.49)
+groceries.items << macaroons
+macaroons.image.attach(io: File.open("#{path}macaroons.jpeg"), filename: 'macaroons.jpeg')
+
+mango = Item.new(name: "Mango Preserves", price: 13.99)
+groceries.items << mango
+mango.image.attach(io: File.open("#{path}mango.jpeg"), filename: 'mango.jpeg')
+
+oil = Item.new(name: "Olive Oil", price: 5.99)
+groceries.items << oil
+oil.image.attach(io: File.open("#{path}oil.jpeg"), filename: 'oil.jpeg')
+
+comb = Item.new(name: "Honeycomb Treat", price: 4.99)
+groceries.items << comb
+comb.image.attach(io: File.open("#{path}comb.jpeg"), filename: 'comb.jpeg')
+
+broth = Item.new(name: "Chicken Broth Cubes", price: 2.49)
+groceries.items << broth
+broth.image.attach(io: File.open("#{path}broth.jpeg"), filename: 'broth.jpeg')
+
+pulsito = Item.new(name: "Pulsitos Snacks", price: 3.49)
+groceries.items << pulsito
+pulsito.image.attach(io: File.open("#{path}pulsito.jpeg"), filename: 'pulsito.jpeg')
+
+#Appliances
+
+blackfridge = Item.new(name: "Black Fridge", price: 629.99)
+appliances.items << blackfridge
+blackfridge.image.attach(io: File.open("#{path}blackfridge.jpeg"), filename: 'blackfridge.jpeg')
+
+redfridge = Item.new(name: "Red Fridge", price: 791.99)
+appliances.items << redfridge
+redfridge.image.attach(io: File.open("#{path}redfridge.jpeg"), filename: 'redfridge.jpeg')
+
+blender = Item.new(name: "Blender", price: 179.99)
+appliances.items << blender
+blender.image.attach(io: File.open("#{path}blender.jpeg"), filename: 'blender.jpeg')
+
+espresso = Item.new(name: "Espresso Stovetop", price: 16.99)
+appliances.items << espresso
+espresso.image.attach(io: File.open("#{path}espresso.jpeg"), filename: 'espresso.jpeg')
+
+espressomachine = Item.new(name: "Espresso Machine", price: 399.99)
+appliances.items << espressomachine
+espressomachine.image.attach(io: File.open("#{path}espressomachine.jpeg"), filename: 'espressomachine.jpeg')
+
+espressomix = Item.new(name: "Espresso Machine Frother", price: 349.99)
+appliances.items << espressomix
+espressomix.image.attach(io: File.open("#{path}espressomix.jpeg"), filename: 'espressomix.jpeg')
+
+microwave = Item.new(name: "Microwave", price: 233.99)
+appliances.items << microwave
+microwave.image.attach(io: File.open("#{path}microwave.jpeg"), filename: 'microwave.jpeg')
+
+coffeemaker = Item.new(name: "Coffee Maker", price: 60.99)
+appliances.items << coffeemaker
+coffeemaker.image.attach(io: File.open("#{path}coffeemaker.jpeg"), filename: 'coffeemaker.jpeg')
+
+oven = Item.new(name: "Oven", price: 854.99)
+appliances.items << oven
+oven.image.attach(io: File.open("#{path}oven.jpeg"), filename: 'oven.jpeg')
+
+toasteroven = Item.new(name: "Toaster Oven", price: 69.99)
+appliances.items << toasteroven
+toasteroven.image.attach(io: File.open("#{path}toasteroven.jpeg"), filename: 'toasteroven.jpeg')
+
+washer = Item.new(name: "Front-Load Washer", price: 854.99)
+appliances.items << washer
+washer.image.attach(io: File.open("#{path}washer.jpeg"), filename: 'washer.jpeg')
+
+fan = Item.new(name: "Portable Fan", price: 62.99)
+appliances.items << fan
+fan.image.attach(io: File.open("#{path}fan.jpeg"), filename: 'fan.jpeg')
+
+#Toys
+
