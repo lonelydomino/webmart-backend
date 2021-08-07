@@ -638,3 +638,53 @@ stability.image.attach(io: File.open("#{path}stability.jpg"), filename: 'stabili
 wheel = Item.new(name: "Abdominal Wheel", price: 17.99)
 fitness.items << wheel
 wheel.image.attach(io: File.open("#{path}wheel.jpg"), filename: 'wheel.jpg')
+
+#Clothing 
+
+button = Item.new(name: "Button Shirt", price: 8.99)
+clothing.items << button
+button.image.attach(io: File.open("#{path}button.jpg"), filename: 'button.jpg')
+
+camisole = Item.new(name: "Camisole", price: 7.49)
+clothing.items << camisole
+camisole.image.attach(io: File.open("#{path}camisole.jpg"), filename: 'camisole.jpg')
+
+checkered = Item.new(name: "Checkered Dress Shirt", price: 17.99)
+clothing.items << checkered
+checkered.image.attach(io: File.open("#{path}checkered.jpg"), filename: 'checkered.jpg')
+
+denim = Item.new(name: "Denim Dress", price: 38.99)
+clothing.items << denim
+denim.image.attach(io: File.open("#{path}denim.jpg"), filename: 'denim.jpg')
+
+denimjacket = Item.new(name: "Dark Denim Jacket", price: 56.99)
+clothing.items << denimjacket
+denimjacket.image.attach(io: File.open("#{path}denimjacket.jpg"), filename: 'denimjacket.jpg')
+
+jacket = Item.new(name: "Washed Denim Jacket", price: 45.99)
+clothing.items << jacket
+jacket.image.attach(io: File.open("#{path}jacket.jpg"), filename: 'jacket.jpg')
+
+long = Item.new(name: "Long Sleeve Dress", price: 29.99)
+clothing.items << long
+long.image.attach(io: File.open("#{path}long.jpg"), filename: 'long.jpg')
+
+pink = Item.new(name: "Pink Casual Pants", price: 22.99)
+clothing.items << pink
+pink.image.attach(io: File.open("#{path}pink.jpg"), filename: 'pink.jpg')
+
+polo = Item.new(name: "Polo Shirt", price: 16.99)
+clothing.items << polo
+polo.image.attach(io: File.open("#{path}polo.jpg"), filename: 'polo.jpg')
+
+skirt = Item.new(name: "Thick Beige Skirt", price: 25.99)
+clothing.items << skirt
+skirt.image.attach(io: File.open("#{path}skirt.jpg"), filename: 'skirt.jpg')
+
+suit = Item.new(name: "Buisness Suit Top", price: 75.99)
+clothing.items << suit
+suit.image.attach(io: File.open("#{path}suit.jpg"), filename: 'suit.jpg')
+
+tees = Item.new(name: "T-Shirts", price: 10.99)
+clothing.items << tees
+tees.image.attach(io: File.open("#{path}tees.jpg"), filename: 'tees.jpg')
