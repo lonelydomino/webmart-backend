@@ -46,33 +46,33 @@ tools.items << drill
 drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
 
 #Furniture
-antiquetable = Item.new(name: "Antique Table")
+antiquetable = Item.new(name: "Antique Table", price: 234.43)
 furniture.items << antiquetable
-antiquetable.image.attach(io: File.open("#{path}antiquetable.jpeg"), filename: 'antiquetable.jpeg', price: 234.43)
+antiquetable.image.attach(io: File.open("#{path}antiquetable.jpeg"), filename: 'antiquetable.jpeg')
 
-armchair = Item.new(name: "Armchair")
+armchair = Item.new(name: "Armchair", price: 543.00)
 furniture.items << armchair
-armchair.image.attach(io: File.open("#{path}armchair.jpeg"), filename: 'armchair.jpeg', price: 543.00)
+armchair.image.attach(io: File.open("#{path}armchair.jpeg"), filename: 'armchair.jpeg')
 
-bookcase = Item.new(name: "Bookcase")
+bookcase = Item.new(name: "Bookcase", price: 245.43)
 furniture.items << bookcase
-bookcase.image.attach(io: File.open("#{path}bookcase.jpeg"), filename: 'bookcase.jpeg', price: 345.00)
+bookcase.image.attach(io: File.open("#{path}bookcase.jpeg"), filename: 'bookcase.jpeg')
 
-couch = Item.new(name: "Couch")
+couch = Item.new(name: "Couch", price: 345.00)
 furniture.items << couch
-couch.image.attach(io: File.open("#{path}couch.jpeg"), filename: 'couch.jpeg', price: 345.34)
+couch.image.attach(io: File.open("#{path}couch.jpeg"), filename: 'couch.jpeg')
 
-desk = Item.new(name: "Desk")
+desk = Item.new(name: "Desk", price: 544.44)
 furniture.items << desk
-desk.image.attach(io: File.open("#{path}desk.jpeg"), filename: 'desk.jpeg', price: 543.00)
+desk.image.attach(io: File.open("#{path}desk.jpeg"), filename: 'desk.jpeg')
 
-drawer = Item.new(name: "Drawer")
+drawer = Item.new(name: "Drawer", price: 534.43)
 furniture.items << drawer
-drawer.image.attach(io: File.open("#{path}drawer.jpeg"), filename: 'drawer.jpeg', price: 435.00)
+drawer.image.attach(io: File.open("#{path}drawer.jpeg"), filename: 'drawer.jpeg')
 
-dresser = Item.new(name: "Dresser", price: )
+dresser = Item.new(name: "Dresser", price: 234.97)
 furniture.items << dresser
-dresser.image.attach(io: File.open("#{path}dresser.jpeg"), filename: 'dresser.jpeg', price: 589.54)
+dresser.image.attach(io: File.open("#{path}dresser.jpeg"), filename: 'dresser.jpeg')
 
 homeoffice = Item.new(name: "Home Office", price: 2000.45)
 furniture.items << homeoffice
