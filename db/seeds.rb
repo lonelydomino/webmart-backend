@@ -19,17 +19,27 @@ fitness = Category.create(name: "fitness")
 toys = Category.create(name: "toys")
 jewelry = Category.create(name: "Jewelry")
 appliances = Category.create(name: "appliances")
-# videogames = Category.create(name: "video games")
 beautycare = Category.create(name: "beauty care")
+path2 = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/"
 
+path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/"
 # Attach Pictures to Categories
 furniture.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
 tools.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/tools.webp'), filename: 'tools.webp')
 pets.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/pets.webp'), filename: 'pets.webp')
 videogames.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
+groceries.image.attach(io: File.open("#{path2}groceries.jpg"), filename: "groceries.jpg")
+books.image.attach(io: File.open("#{path2}books.jpg"), filename: "books.jpg")
+electronics.image.attach(io: File.open("#{path2}electronics.jpg"), filename: "electronics.jpg")
+clothing.image.attach(io: File.open("#{path2}clothing.jpg"), filename: "clothing.jpg")
+fitness.image.attach(io: File.open("#{path2}fitness.webp"), filename: "fitness.webp")
+toys.image.attach(io: File.open("#{path2}toys.jpg"), filename: "toys.jpg")
+appliances.image.attach(io: File.open("#{path2}appliances.jpg"), filename: "appliances.jpg")
+jewelry.image.attach(io: File.open("#{path2}jewelry.jpg"), filename: "jewelry.jpg")
+beautycare.image.attach(io: File.open("#{path2}beautycare.jpg"), filename: "beautycare.jpg")
 
 
-path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/"
+
 
 
 
