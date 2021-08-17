@@ -26,9 +26,12 @@ class ShoppingCartsController < ApplicationController
 
   # PATCH/PUT /shopping_carts/1
   def update
-    if @shopping_cart.update(shopping_cart_params)
+    item = Item.find_by_id(shopping_cart_params["id"])
+    @shopping_cart.items << item
+    if @shopping_cart
       render json: @shopping_cart
     else
+      byebug
       render json: @shopping_cart.errors, status: :unprocessable_entity
     end
   end
@@ -41,11 +44,11 @@ class ShoppingCartsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_shopping_cart
-      @shopping_cart = ShoppingCart.find(params[:id])
+      @shopping_cart = ShoppingCart.find(params["cart"][:id])
     end
 
     # Only allow a list of trusted parameters through.
     def shopping_cart_params
-      params.require(:shopping_cart).permit(:user_id)
+      params.require(:item).permit(:id)
     end
 end
