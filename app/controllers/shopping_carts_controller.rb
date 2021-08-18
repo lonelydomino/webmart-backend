@@ -1,5 +1,5 @@
 class ShoppingCartsController < ApplicationController
-  before_action :set_shopping_cart, only: [:show, :update, :destroy]
+  before_action :set_shopping_cart, only: [:update, :destroy]
 
   # GET /shopping_carts
   def index
@@ -10,6 +10,7 @@ class ShoppingCartsController < ApplicationController
 
   # GET /shopping_carts/1
   def show
+    @shopping_cart = ShoppingCart.find_by_id(params[:id])
     render json: @shopping_cart
   end
 
