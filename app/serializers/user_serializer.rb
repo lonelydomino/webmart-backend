@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :email, :shopping_cart, :created_date, :name
+  attributes :id, :email, :shopping_cart, :created_date, :name
 
   def created_date
     self.object && self.object.created_at.strftime('%d/%m/%Y')

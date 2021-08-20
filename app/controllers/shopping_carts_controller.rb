@@ -1,5 +1,5 @@
 class ShoppingCartsController < ApplicationController
-  before_action :set_shopping_cart, only: [:update, :destroy]
+  before_action :set_shopping_cart, only: [:update]
 
   # GET /shopping_carts
   def index
@@ -39,7 +39,10 @@ class ShoppingCartsController < ApplicationController
 
   # DELETE /shopping_carts/1
   def destroy
-    @shopping_cart.destroy
+    item_id = params["_json"].to_i
+    @shopping_cart = ShoppingCart.find(params["id"].to_i)
+    item = ShoppingCartItem.all.find{|e| e.item_id == item_id && e.shopping_cart_id == @shopping_cart.id}
+    item.destroy
   end
 
   private
