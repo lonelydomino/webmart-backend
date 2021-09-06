@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :shopping_carts
   default_url_options :host => "http://localhost:3000"
-  # resources :users
   resources :categories
   resources :items
   get 'current_user/index'

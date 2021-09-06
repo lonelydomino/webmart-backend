@@ -32,7 +32,6 @@ class ShoppingCartsController < ApplicationController
     if @shopping_cart
       render json: @shopping_cart
     else
-      byebug
       render json: @shopping_cart.errors, status: :unprocessable_entity
     end
   end
