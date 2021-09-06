@@ -20,14 +20,14 @@ toys = Category.create(name: "toys")
 jewelry = Category.create(name: "Jewelry")
 appliances = Category.create(name: "appliances")
 beautycare = Category.create(name: "beauty care")
-path2 = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/"
+path2 = "/app/assets/images/"
 
-path = "/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/"
+path = "/app/assets/images/items/"
 # Attach Pictures to Categories
-furniture.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
-tools.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/tools.webp'), filename: 'tools.webp')
-pets.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/pets.webp'), filename: 'pets.webp')
-videogames.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/games.jpeg'), filename: 'games.jpeg')
+furniture.image.attach(io: File.open('/app/assets/images/furniture.jpeg'), filename: 'furniture.jpeg')
+tools.image.attach(io: File.open('/app/assets/images/tools.webp'), filename: 'tools.webp')
+pets.image.attach(io: File.open('/app/assets/images/pets.webp'), filename: 'pets.webp')
+videogames.image.attach(io: File.open('/app/assets/images/games.jpeg'), filename: 'games.jpeg')
 groceries.image.attach(io: File.open("#{path2}groceries.jpg"), filename: "groceries.jpg")
 books.image.attach(io: File.open("#{path2}books.jpg"), filename: "books.jpg")
 electronics.image.attach(io: File.open("#{path2}electronics.jpg"), filename: "electronics.jpg")
@@ -46,15 +46,15 @@ beautycare.image.attach(io: File.open("#{path2}beautycare.jpg"), filename: "beau
 #Tools
 chainsaw = Item.new(name:"Chain saw", price: 22.99)
 tools.items << chainsaw
-chainsaw.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
+chainsaw.image.attach(io: File.open('/app/assets/images/items/chainsaw.jpeg'), filename: 'chainsaw.jpeg')
 
 wrench = Item.new(name:"Wrench", price: 33.99)
 tools.items << wrench
-wrench.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/wrench.jpeg'), filename: 'wrench.jpeg')
+wrench.image.attach(io: File.open('/app/assets/images/items/wrench.jpeg'), filename: 'wrench.jpeg')
 
 drill = Item.new(name: "Drill", price: 43.99)
 tools.items << drill
-drill.image.attach(io: File.open('/Users/milo/Flatiron/Phase 5 Project/webmart_backend/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
+drill.image.attach(io: File.open('/app/assets/images/items/drill.jpeg'), filename: 'drill.jpeg')
 
 armytool = Item.new(name: "armytool", price: 1.99)
 tools.items << armytool
