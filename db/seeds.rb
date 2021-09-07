@@ -21,6 +21,7 @@ jewelry = Category.create(name: "Jewelry")
 appliances = Category.create(name: "appliances")
 beautycare = Category.create(name: "beauty care")
 path2 = "app/assets/images/"
+this1 ="1"
 
 path = "app/assets/images/items/"
 # Attach Pictures to Categories
