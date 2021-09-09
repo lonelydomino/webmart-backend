@@ -17,7 +17,7 @@ class CategorySerializer < ActiveModel::Serializer
 #   serialized_category.to_json()
 # end
 def image 
-  self.object.get_image_url()
+  self.object.get_image_url() if self.object.image.attached?
 end
 
   # def image
