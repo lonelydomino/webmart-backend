@@ -4,6 +4,15 @@ class CategorySerializer < ActiveModel::Serializer
   attributes :id, :name, :tag_line, :image
   has_many :items, except: [:updated_at, :created_at]
 
+def serialize_category(category)
+  byebug
+# {
+#   category:
+# }
+
+
+end
+
   def image
     rails_blob_path(object.image, disposition: "attachment", only_path: true) if object.image.attached?
     # object.image.service_url if object.image.attached?
