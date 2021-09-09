@@ -4,7 +4,9 @@ class ItemSerializer < ActiveModel::Serializer
   belongs_to :category, except: [:updated_at, :created_at, :items]
   
   def image
-    rails_blob_path(object.image, disposition: "attachment", only_path: true) if object.image.attached?
+    self.object.get_image_url()
+
+    # rails_blob_path(object.image, disposition: "attachment", only_path: true) if object.image.attached?
     # object.image.service_url if object.image.attached?
   end
   def category

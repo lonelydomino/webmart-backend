@@ -270,11 +270,11 @@ gemstone.image.attach(io: File.open("#{path}gemstone.png"), filename: 'gemstone.
 
 pearl = Item.new(name: "Pearl Necklace", price: 309.99)
 jewelry.items << pearl
-pearl.image.attach(io: File.open("#{path}pearl.png"), filename: 'pearl.png')
+# pearl.image.attach(io: File.open("#{path}pearl.png"), filename: 'pearl.png')
 
 bracelet = Item.new(name: "Gold and Silver Bracelet", price: 719.99)
 jewelry.items << bracelet
-bracelet.image.attach(io: File.open("#{path}bracelet.png"), filename: 'bracelet.png')
+# bracelet.image.attach(io: File.open("#{path}bracelet.png"), filename: 'bracelet.png')
 
 bluegemstone = Item.new(name: "White Silver and Blue Gemstone Earrings", price: 219.99)
 jewelry.items << bluegemstone
