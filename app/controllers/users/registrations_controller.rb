@@ -14,7 +14,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         render json: {
           status: {code: 200, message: 'Signed up sucessfully.'},
           data: resource
-        }
+        } 
       else
         debugger
         render json: {

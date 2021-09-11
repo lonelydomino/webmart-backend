@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :shopping_carts
-  default_url_options :host => "http://localhost:3000"
+  default_url_options :host => "https://web-mart-backend.herokuapp.com/"
   resources :categories
   resources :items
   get '/', to: 'categories#index'
